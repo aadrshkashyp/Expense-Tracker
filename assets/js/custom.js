@@ -53,19 +53,23 @@ function generateID() {
 // Transactions history
 function addTransactionDOM(transaction) {
   // Get sign
-  const sign = transaction.amount < 0 ? "-" : "+";
+  const sign = transaction.amount < 0 ? "- " : "+ ";
 
-  const item = document.createElement("li");
+  const item = document.createElement("tr");
 
   // Add class based on value
   item.classList.add(transaction.amount < 0 ? "minus" : "plus");
 
   item.innerHTML = `
-    ${transaction.text} ${sign}${Math.abs(
+  <td class="text-light">${transaction.text}</td>
+                  <td class="text-light"> ${sign}${Math.abs(
     transaction.amount
-  )} <button class="delete-btn" onclick="removeTransaction(${
-    transaction.id
-  })">X</button>
+  )}</td>
+                  <td class="text-light">
+                    <button type="submit" class="btn btn-danger" onclick="removeTransaction(${
+                      transaction.id
+                    })">Delete</button>
+                  </td>
   `;
 
   list.appendChild(item);

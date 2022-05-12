@@ -17,8 +17,11 @@
     />
     <!-- Bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <!--Glide-->
-    <link rel="stylesheet" href="assets/css/glide.core.min.css" />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom Css-->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
@@ -30,7 +33,7 @@
           <div class="_header_logo">
             <a class="navbar-brand _logo" href="#0">
               <img
-                src="https://assets.aadarshkashyap.pw/aakr-assets/images/Logo.svg"
+                src="https://assets.aadarshkashyap.pw/aakr-assets/images/Logo.png"
                 alt="image"
                 class="_logo_img"
               />
@@ -102,7 +105,7 @@
               <div class="_header_finance_r8_wrap">
                 <div class="_header_finance_r8_img">
                   <img
-                    src="assets/img/header-r8-img.svg"
+                    src="https://assets.aadarshkashyap.pw/aakr-assets/images/new-banner.png"
                     alt="image"
                     class="_header_finance_r8_img_tag"
                   />
@@ -213,6 +216,21 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-12">
                 <div class="_service_finance_r8_wrap2">
+                  <div class="income-expense">
+                    <div class="bg-card">
+                      <h4>Earning</h4>
+                      <p class="income" id="income">₹0.00</p>
+                    </div>
+                    <div class="bg-card">
+                      <h4>Expense</h4>
+                      <p class="expense" id="expense">₹0.00</p>
+                    </div>
+                    <div class="bg-card">
+                      <h4>Balance</h4>
+                      <p id="balance">₹0.00</p>
+                    </div>
+                  </div>
+
                   <div class="_service_finance_r8_wrap2_img">
                     <form id="form" class="_contact_finance_r8_message_form">
                       <div class="row">
@@ -236,7 +254,6 @@
                           id="amount"
                           class="_contact_finance_r8_message_form_box_inpt"
                           placeholder="Amount"
-                          required
                         />
                       </div>
 
@@ -244,24 +261,10 @@
                         <button
                           class="_contact_finance_r8_message_form_box_btn1"
                         >
-                          Done
+                          Add
                         </button>
                       </div>
                     </form>
-                  </div>
-                </div>
-                <div class="income-expense">
-                  <div class="bg-card">
-                    <h4>Earning</h4>
-                    <p class="income" id="income">₹0.00</p>
-                  </div>
-                  <div class="bg-card">
-                    <h4>Expense</h4>
-                    <p class="expense" id="expense">₹0.00</p>
-                  </div>
-                  <div class="bg-card">
-                    <h4>Balance</h4>
-                    <p id="balance">₹0.00</p>
                   </div>
                 </div>
               </div>
@@ -285,6 +288,19 @@
           </div>
 
           <div class="row justify-content-center">
+            <table class="table mb-4">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-primary">Description</th>
+                  <th scope="col" class="text-success">Amount</th>
+                  <th scope="col" class="text-danger">Action</th>
+                </tr>
+              </thead>
+              <tbody id="list">
+                <tr></tr>
+              </tbody>
+            </table>
+
             <ul id="list" class="list"></ul>
           </div>
         </div>
@@ -292,151 +308,17 @@
     </section>
     <!--service01 finance wrapper end-->
 
-    <!--testimonial finance wrapper -->
-    <section class="_testimonial_finance_wrapper">
-      <div class="_testimonial_finance_wrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-              <div class="_testimonial_finance_bg_wrap">
-                <div class="row align-items-center">
-                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                    <div class="_testimonial_finance_lft_img">
-                      <img
-                        src="assets/img/testimonial-lft-rect.svg"
-                        alt="image"
-                        class="_testimonial_finance_lft_img1"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                    <div class="_testimonial_finance_r8_wrap">
-                      <h3 class="_testimonial_finance_r8_t">
-                        We’re on a mission bring tranparency to finance . for
-                        people without borders.
-                      </h3>
-                      <div class="_testimonial_finance_r8_comma">
-                        <img
-                          src="assets/img/testimonial-r8-comma.svg"
-                          alt="icon"
-                          class="_testimonial_finance_r8_comma_ic"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--testimonial finance wrapper end-->
-
     <!--footer finance wrapper-->
-    <footer class="_footer_finance_wrapper">
-      <div class="_footer_finance_wrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12">
-              <div class="_footer_finance_cont_wrap">
-                <h4 class="_footer_finance_cont_t">
-                  Protecting you and your money
-                </h4>
-                <p class="_footer_finance_cont_p">
-                  Streamline your payment process with hassle-free altermnatimve
-                  to checks and cash
-                </p>
-                <div class="_footer_finance_cont_btns">
-                  <div class="_footer_finance_cont_btn1">
-                    <a href="#0" class="_footer_finance_cont_btn _play_btn">
-                      <img
-                        src="assets/img/footer-playstore.svg"
-                        alt="icon"
-                        class="_footer_finance_play_ic"
-                      />
-                      Google Store
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="_footer_finance_bottom_wrap">
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 col-md-12">
-                <div class="_footer_finance_logo_wrap">
-                  <a href="#0" class="_footer_finance_logo_a">
-                    <img
-                      src="https://assets.aadarshkashyap.pw/aakr-assets/images/Logo.svg"
-                      alt="icon"
-                      class="_footer_finance_logo"
-                    />
-                  </a>
-                  <p class="_footer_finance_logo_p">
-                    Payfast is the world’s largest and most secure digital
-                    wallet service.
-                  </p>
-                  <div class="_footer_finance_social_wrap">
-                    <ul class="_footer_finance_social_ul">
-                      <li class="_footer_finance_social_li">
-                        <a href="#0" class="_footer_finance_social_itm">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="10"
-                            height="19"
-                            fill="none"
-                            viewBox="0 0 10 19"
-                          >
-                            <path
-                              fill="#fff"
-                              d="M10 7.308H6.667V4.385c0-.807.597-.731 1.333-.731h1.333V0H6.667c-2.21 0-4 1.963-4 4.385v2.923H0v3.653h2.667V19h4v-8.039h2L10 7.308z"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="_footer_finance_social_li">
-                        <a href="#0" class="_footer_finance_social_itm">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="19"
-                            height="15"
-                            fill="none"
-                            viewBox="0 0 19 15"
-                          >
-                            <path
-                              fill="#fff"
-                              d="M19 1.776c-.707.3-1.46.5-2.244.597A3.785 3.785 0 0018.469.282a7.923 7.923 0 01-2.47.916A3.957 3.957 0 0013.154 0C10.997 0 9.26 1.7 9.26 3.786c0 .3.026.588.09.863A11.135 11.135 0 011.324.69 3.728 3.728 0 00.79 2.603c0 1.31.694 2.473 1.73 3.145a3.933 3.933 0 01-1.76-.466v.042c0 1.84 1.35 3.367 3.12 3.719a3.995 3.995 0 01-1.02.124c-.25 0-.502-.014-.738-.064.505 1.498 1.937 2.6 3.64 2.636a7.973 7.973 0 01-4.83 1.614c-.32 0-.626-.013-.932-.051A11.2 11.2 0 005.976 15c7.167 0 11.086-5.77 11.086-10.77 0-.167-.006-.329-.014-.49A7.653 7.653 0 0019 1.777z"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="_footer_finance_social_li">
-                        <a href="#0" class="_footer_finance_social_itm">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="14"
-                            height="14"
-                            fill="none"
-                            viewBox="0 0 14 14"
-                          >
-                            <path
-                              fill="#fff"
-                              d="M.256 14h2.386V4.107H.256V14zm1.21-11.071c.835 0 1.466-.643 1.466-1.465C2.932.643 2.302 0 1.466 0 .614 0 0 .643 0 1.464 0 2.286.614 2.93 1.466 2.93zM11.614 14H14V8.196c0-2.732-1.568-4.232-3.767-4.232-1.21 0-2.233.536-2.847 1.375V4.107H5V14h2.386V8.536c0-1.59.836-2.447 2.131-2.447 1.261 0 2.097.857 2.097 2.447V14z"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <footer class="new_footer_area bg_color">
+      <div class="new_footer_top">
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
         </div>
       </div>
     </footer>
     <!--footer finance wrapper end-->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
