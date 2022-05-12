@@ -87,9 +87,9 @@ function updateValues() {
       .filter((value) => value < 0)
       .reduce((bal, value) => (bal += value), 0) * -(1).toFixed(2);
 
-  balance.innerText = `$${total}`;
-  inflow.innerText = `$${income}`;
-  outflow.innerText = `$${expense}`;
+  balance.innerText = `₹${total}`;
+  inflow.innerText = `₹${income}`;
+  outflow.innerText = `₹${expense}`;
 }
 
 // Remove transaction by ID
