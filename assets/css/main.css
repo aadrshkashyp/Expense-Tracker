@@ -64,7 +64,6 @@ button {
 }
 ._header_finance_wrapper {
   margin: 20px 0;
-  overflow-x: hidden;
 }
 ._header_logo {
   display: flex;
@@ -148,7 +147,7 @@ button {
 }
 ._header_finance_cont_wrap:before {
   position: absolute;
-  content: "";
+
   background: var(--bg11);
   width: 1296px;
   height: 1px;
