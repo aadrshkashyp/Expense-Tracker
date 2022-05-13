@@ -1170,6 +1170,7 @@ button {
 }
 .income-expense {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0;
 }
@@ -1199,6 +1200,7 @@ button {
   margin: 0 2px;
   border-radius: 1rem;
   padding: 0.5rem;
+  margin: 0.5rem;
 }
 ._contact_finance_wrapper {
   position: relative;
